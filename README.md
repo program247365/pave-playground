@@ -2,6 +2,8 @@
 
 Quickly test out [Pave](https://www.npmjs.com/package/pave) queries.
 
+![Pave Playground](screenshot.png)
+
 ## Getting Started
 
 `npm setup`
