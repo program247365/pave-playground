@@ -1,0 +1,31 @@
+{
+  "name": "pave-playground",
+  "version": "1.0.0",
+  "description": "A playground to play with Pave.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm i && npm run open && npm run serve",
+    "open": "opn http://localhost:1234",
+    "dev": "parcel watch index.html",
+    "serve": "parcel index.html"
+  },
+  "keywords": [
+    "pave",
+    "graph",
+    "playground"
+  ],
+  "author": "Kevin B. Ridgway",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "circular-json": "^0.4.0",
+    "pave": "^0.4.7",
+    "prettify-js": "^1.0.1",
+    "tachyons": "^4.9.0"
+  },
+  "devDependencies": {
+    "opn-cli": "^3.1.0",
+    "parcel-bundler": "^1.0.2"
+  }
+}

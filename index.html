@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <title>Pave Playground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <script>
+(function(d) {
+
+  stylizePreElements = function() {
+    var preElements = document.getElementsByTagName("pre");
+    for (i = 0; i < preElements.length; ++i) {
+      var preElement = preElements[i];
+      preElement.className += "prettyprint";
+    }
+  };
+
+  injectPrettifyScript = function() {
+    var scriptElement = document.createElement('script');
+    scriptElement.setAttribute("src", "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js");
+    document.head.appendChild(scriptElement);
+  };
+
+  stylizePreElements();
+  injectPrettifyScript();
+
+})(document)
+  </script>
+</head>
+
+<body>
+  <article style="background: url(https://images.unsplash.com/photo-1468070454955-c5b6932bd08d?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat center center fixed; background-size: cover;">
+    <div class="fl w-25 pa3 pa4-ns bg-white black-70 f3 times">
+      <header class="bb b--black-70 pv4">
+        <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3 avenir">Pave Playground</h3>
+        <h4 class="f3 fw4 i lh-title mt0">Kevin B. Ridgway</h4>
+      </header>
+      <section class="pt5 pb4">
+        <h1 class="f1 lh-title">README</h1>
+        <h4 class="times lh-copy measure f4 mt0">Quickly test out
+          <a href="https://www.npmjs.com/package/pave">Pave</a> queries.</h4>
+        <h2>Getting Started</h2>
+        <p class="code lh-copy measure f4 mt0">
+          <code>npm setup</code>
+        </p>
+        <p class="times lh-copy measure f4 mt0">When the console says `Build in XXXms`, refresh the page that opened in your browser. Now you have your code running
+          with no setup! When you save index.js, the page will refresh itself automatically.</p>
+        <p class="times lh-copy measure f4 mt0">Check the browser console of the page that opened for output of this playground.</p>
+        <h2>Notes</h2>
+        <p class="times lh-copy measure f4 mt0">Uses
+          <a href="https://parceljs.org/">ParcelJS</a> to quickly get started experimenting. See the
+          <a href="https://parceljs.org/getting_started.html">docs</a>.</p>
+      </section>
+    </div>
+    <section class="fl w-75 pl5 pr5 pt5 pb4 f1">
+      <div style="display: flex; flex-direction: column;">
+        <header style="position: relative; padding: 10px; background-color: rgb(224, 233, 240); border-top-left-radius: 10px; border-top-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 10px 0px inset;">
+          <nav style="display: flex; text-align: left;">
+            <button style="border: none; border-radius: 50%; height: 15px; width: 15px; margin-right: 5px; background-color: rgb(238, 80, 87);"></button>
+            <button style="border: none; border-radius: 50%; height: 15px; width: 15px; margin-right: 5px; background-color: rgb(222, 198, 18);"></button>
+            <button style="border: none; border-radius: 50%; height: 15px; width: 15px; margin-right: 5px; background-color: rgb(51, 185, 105);"></button>
+          </nav>
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 0.58em;">1. kridgway@macbookpro: ~(bash)</div>
+        </header>
+        <section style="padding: 15px; background-color: rgb(48, 53, 57); color: white; min-height: 400px; font-family: Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; font-size: 0.58em; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; height: 100%; overflow: auto;"><code id="log" class="p4"></code>
+        </section>
+      </div>
+    </section>
+  </article>
+  <script src="./index.js"></script>
+</body>
+
+</html>
