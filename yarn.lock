@@ -4286,10 +4286,10 @@ path-type@^3.0.0:
   dependencies:
     pify "^3.0.0"
 
-pave@^0.4.7:
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/pave/-/pave-0.4.7.tgz#6a5204d2e4727e6c8bd671b2096005dfcb0edf2e"
-  integrity sha512-KCXxptV+wcw5XYuFIofdLMi23fXnieJvgWnw87l3+tahOp/9p9Ufnmh993MWDIouksB/M8ae3yftOY3QwFgU1w==
+pave@^0.8.5:
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/pave/-/pave-0.8.5.tgz#009a9884539bde3603cec6145cdab938c8a9d2d0"
+  integrity sha512-QKij1odZSyGZY4fJNx3x4Q97JjcAhlyoNkXXnHViu+0QQf0ZZ/vvt1b4YBZIBJWJRqKCFCDLjpDL4XkFlo6fVQ==
 
 pbkdf2@^3.0.3:
   version "3.0.17"
