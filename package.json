@@ -23,7 +23,7 @@
     "pave": "^0.4.7",
     "prettify-js": "^1.0.1",
     "tachyons": "^4.9.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.13.0"
   },
   "devDependencies": {
     "opn-cli": "^5.0.0",
