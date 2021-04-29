@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: underscore
+    versions:
+    - 1.12.0
+    - 1.12.1
+    - 1.13.0
+  - dependency-name: pave
+    versions:
+    - 0.10.1
+    - 0.9.0
+    - 0.9.1
+    - 0.9.3
+    - 0.9.5
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: parcel-bundler
+    versions:
+    - 1.12.4
